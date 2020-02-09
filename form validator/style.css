@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  background-color: slateblue;
+}
+h1 {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 30px;
+  font-size: xx-large;
+}
+.formc {
+  border-color: silver;
+  background-color: white;
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+label {
+  display: block;
+  font-size: larger;
+  color: gray;
+  padding-bottom: 5px;
+}
+.formp {
+  padding-bottom: 5px;
+}
+input {
+  display: block;
+  padding: 5px;
+  margin-left: 5px;
+  outline: 0;
+  width: 100%;
+}
+:-ms-input-placeholder {
+  font-size: medium;
+}
+input:focus {
+  outline: 0px;
+  border-color: #777;
+}
+
+small {
+  color: red;
+  visibility: hidden;
+}
+button {
+  background-color: slateblue;
+  font-size: medium;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  padding: 10px;
+  outline: 0px;
+  width: 100%;
+  display: block;
+  border-radius: 15px;
+}
+.formp.success input {
+  border-color: greenyellow;
+}
+.formp.error input {
+  border-color: red;
+}
+.formp.error small {
+  visibility: visible;
+}
