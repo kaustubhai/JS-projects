@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lora', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    margin: 0;
+    background-color: rgb(94, 108, 121) !important;
+}
+h1{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+.screen{
+    background-color: #000 !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 50%;
+    cursor: pointer;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    background-color: #333;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.controls .fa-play{
+    color: green;
+    background-color: transparent;
+}
+.controls .fa-stop{
+    color: red;
+    background-color: transparent;
+    padding: 5px;
+    margin-right: 5px;
+}
+.controls .fa-pause{
+    color: white;
+    background-color: transparent;
+}
+.timestamp{
+    color: white;
+    margin-left: 15px;
+}
+#play{
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+#stop{
+    background-color: transparent;
+    outline: none;
+    box-shadow: none;
+    border-color: transparent;
+}
+@media (max-width: 1000px){
+    .screen{
+        width: 90%;
+    }
+    .controls{
+        width: 90%;
+    }
+}
