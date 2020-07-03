@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!--Google API for Icosn-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row"></div>
+    <div class="row"><h5 class="left-align">Please fill this form</h5></div>
+    <div class="row"><h7 class="left-align font-red">All sections are mandotary</h7>
+      <div class="row"><div class="col s1 offset-s11"><a class="btn-floating wave-effect btn-medium blue"><i class="material-icons">restore</i></a></div></div>
+    <div class="row">
+      <form id="form">
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label class="color" id="label1" for="first_name">First Name</label>
+            <small id="msg" class="msg">Message to be conveyed</small>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label class="color" id="label2" for="last_name">Last Name</label>
+            <small id="msg" class="msg">Message to be conveyed</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="text" class="validate">
+            <label class="color" id="label3" for="email">Your Email</label>
+            <small id="msg" class="msg">Message to be conveyed</small>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+          <input type="password" id="password" class="validate">
+          <label class="color" id="label4" for="password">Password</label>
+          <small id="msg" class="msg">Message to be conveyed</small>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <input type="password" id="cnf-password" class="validate">
+          <label class="color" id="label5" for="cnf-password">Confirm Password</label>
+          <small id="msg" class="msg">Message to be conveyed</small>
+        </div>
+      </div>
+      <div class="row">
+        <button id="submit-btn" type="submit" class="waves-effect waves-light btn blue">Submit</button>
+        <span id="help" class="helper-text" data-error="wrong" data-success="Success"></span>
+      </div>
+      </form>
+    </div>
+</div>
+  </div>
+</body>
+<script src="main.js"></script>
+</html>

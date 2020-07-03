@@ -1,0 +1,25 @@
+.colorB{
+    font-size: large !important;
+    color: black !important;
+}
+.color{
+    font-size: large !important;
+}
+.success{
+    font-size: large !important;
+    color: rgb(49, 165, 49) !important;
+}
+.error{
+    font-size: large !important;
+    color: red !important;
+}
+.submit-btn{
+    color: white !important;
+}
+.msg{
+    visibility: hidden;
+}
+.msg-e{
+    visibility: visible;
+    color: red;
+}
