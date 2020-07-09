@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root{
+    --primary-color: #30336b;
+    --secondary-color: #be2edd;
+    --duration-modal: 1s;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    transition: transform 1s;
+}
+body.show-nav{
+    transform: translateX(200px);
+}
+nav{
+    background-color: var(--primary-color);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 200px;
+    border: 2px solid gray;
+    height: 100vh;
+    color: white;
+    transform: translateX(-100%);
+}
+nav .user{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+nav .user img{
+    border-radius: 100%;
+    height: 120px;
+    width: 120px;
+}
+nav ul{
+    list-style-type: none !important;
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    padding: 15px 0px;
+    border-top: 2px solid rgba(200,200,200,0.1);
+}
+nav ul li:last-of-type{
+    border-bottom: 2px solid rgba(200,200,200,0.1);
+}
+nav ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding-left: 10px;
+}
+nav ul li a:hover{
+    text-decoration: underline;
+}
+header{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 50px 25px;
+    text-align: center;
+}
+header button{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+}
+.times{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+header .open{
+    background-color: var(--secondary-color);
+}
+button{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+.container{
+    padding: 0px 15px;
+    margin: 0 auto;
+    width: 800px;
+    max-width: 100%;
+}
+.container p{
+    text-align: center;
+}
+.modal-container{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    display: none;
+    top: 0;
+    bottom: 0;
+}
+.modal-container-show{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    overflow: hidden;
+    left: 0;
+    right: 0;
+    display: block;
+    top: 0;
+    bottom: 0;
+}
+.modal{
+    background-color: white;
+    overflow: hidden;
+    position: absolute;
+    width: 400px;
+    max-width: 100%;
+    top: 50%;
+    border-radius: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.3);
+    animation-name: modal-open;
+    animation-duration: var(--duration-modal);
+}
+@keyframes modal-open{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.modal .head{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding-bottom: 15px;
+    text-align: center;
+    padding-top: 15px;
+}
+.modal .head .close{
+    background-color: var(--primary-color);
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 15px 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.modal-content p{
+    padding: 5px 25px;
+    text-align: center;
+}
+.form-modal div{
+    margin: 15px 0px;
+    padding: 0px 25px;
+}
+.form-modal div label{
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+.form-modal div input{
+    width: 100%;
+    border-radius: 5px;
+    border: 0.1px solid black;
+    box-shadow: none;
+    padding: 8px;
+}
+form .submit{
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    box-shadow: none;
+    border: none;
+}
